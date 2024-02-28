@@ -1,4 +1,5 @@
 ﻿
+using ApplicationCore.DTOs.Logs;
 using ApplicationCore.Wrappers;
 
 namespace ApplicationCore.Interfaces
@@ -7,5 +8,7 @@ namespace ApplicationCore.Interfaces
     {
         Task<Response<object>> GetData();
         Task<Response<string>> GetIp();
+        Task<Response<int>> CreateLog(LogsDto request);
+
     }
 }
