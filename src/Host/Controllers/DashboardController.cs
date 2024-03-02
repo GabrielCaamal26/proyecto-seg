@@ -38,8 +38,6 @@ namespace Host.Controllers
             return Ok(result);
         }
 
-      
-
         [HttpPost("create")]
         public async Task<ActionResult<Response<int>>> Create(CreateUserCommand request)
         {
